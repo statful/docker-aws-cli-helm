@@ -3,7 +3,7 @@ FROM alpine
 MAINTAINER Vasco Santos <jvosantos@gmail.com>
 
 ARG AWS_VERSION="1.17.14"
-ARG HELM_VERSION="v2.16.1"
+ARG HELM_VERSION="v3.0.0"
 
 RUN apk update \
  &&  apk add ca-certificates curl py-pip py2-pip git bash openssl \
@@ -15,6 +15,4 @@ RUN apk update \
  &&  chmod +x /usr/local/bin/aws-iam-authenticator \
  &&  rm /var/cache/apk/* \
  &&  rm -rf /tmp/*
-
-RUN helm init --client-only
 
