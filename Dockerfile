@@ -3,7 +3,7 @@ FROM alpine
 MAINTAINER Vasco Santos <jvosantos@gmail.com>
 
 ARG AWS_VERSION="1.17.17"
-ARG HELM_VERSION="v3.0.3"
+ARG HELM_VERSION="v3.1.0"
 
 RUN apk update \
  &&  apk add ca-certificates curl py-pip py2-pip git bash openssl \
