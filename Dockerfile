@@ -2,7 +2,7 @@ FROM ubuntu:latest
 
 MAINTAINER Vasco Santos <jvosantos@gmail.com>
 
-ARG AWS_VERSION="2.0.13"
+ARG AWS_VERSION="2.0.14"
 ARG HELM_VERSION="v3.2.4"
 
 RUN apt-get update \
